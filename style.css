@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .logo h1 {
+    float: left;
+    font-size: 1.8em;
+    margin-left: 20px;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+header nav ul li a:hover {
+    background: #333;
+}
+
+section {
+    padding: 40px 0;
+}
+
+section#home {
+    background: linear-gradient(to right, #FF4E50, #F9D423);
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+section#home .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+section#home .btn:hover {
+    background: #FF4E50;
+}
+
+section#courses {
+    background: #fff;
+    text-align: center;
+}
+
+section#courses .course {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #E0F7FA;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#courses .course:hover {
+    transform: scale(1.05);
+}
+
+section#testimonials {
+    background: #FFEB3B;
+    text-align: center;
+    padding: 60px 0;
+}
+
+section#testimonials .testimonial {
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FFF9C4;
+    transition: transform 0.3s ease-in-out;
+}
+
+section#testimonials .testimonial:hover {
+    transform: scale(1.05);
+}
+
+section#contact {
+    background: #fff;
+    text-align: center;
+    padding: 60px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #FF4E50;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease-in-out;
+}
+
+form button:hover {
+    background: #333;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+    header nav {
+        float: none;
+        text-align: center;
+    }
+
+    header .logo, header nav ul {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+}
